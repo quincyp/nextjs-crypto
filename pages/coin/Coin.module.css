@@ -12,23 +12,38 @@
     align-items: center;
     border: 1px solid #6C63FF;
     border-radius: 10px;
-    padding: 4rem;
+    padding: 2rem;
     width: 400px;
 }
 
 .coin_image {
     margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.coin_image:hover {
+    transform: scale(1.15);
 }
 
 .coin_name {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
-.coin_ticker {
-    margin-bottom: 1rem;
+.coin_symbol {
+    margin-bottom: 2.5rem;
 }
 
 .coin_current {
     margin-bottom: 1rem;
     font-size: 2rem;
+}
+
+.coin_homepage, .coin_subreddit {
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.coin_homepage:hover, .coin_subreddit:hover {
+    color: #6C63FF;
+    transform: scale(1.1);
 }

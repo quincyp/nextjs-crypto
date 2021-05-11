@@ -42,6 +42,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .coin_logo {
