@@ -7,12 +7,10 @@ const Coins = ({ name, id, price, symbol, marketcap, volume, image, priceChange 
         <a>
         <div className={styles.coin_container}>
             <div className={styles.coin_row}>
-                <div className={styles.coin}>
+                <div className={styles.coin_columns}>
                     <img src={image} alt={image} className={styles.coin_img}/>
                     <h1 className={styles.coin_h1}>{name}</h1>
                     <p className={styles.coin_symbol}>{symbol}</p>
-                </div>
-                <div className={styles.coin_data}>
                     <p className={styles.coin_price}>${price}</p>
                     <p className={styles.coin_volume}>${volume.toLocaleString()}</p>
 
@@ -27,7 +25,7 @@ const Coins = ({ name, id, price, symbol, marketcap, volume, image, priceChange 
                     )}
 
                     <p className={styles.coin_marketcap}>
-                        Mkt Cap: ${marketcap.toLocaleString()}
+                        ${marketcap.toLocaleString()}
                     </p>
                 </div>
             </div>
